@@ -1,0 +1,125 @@
+/* Include padding and borders in element widths */
+* {
+    box-sizing: border-box;
+}
+
+/* Style the whole page */
+body {
+    margin: 0;
+    padding: 24px;
+    font-family: Arial, sans-serif;
+    background-color: #eef2f1;
+    color: #263833;
+    line-height: 1.6;
+}
+
+/* Center the resume and limit its width */
+.resume-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #d5dfdb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Style the introductory header */
+#main-header {
+    background-color: #245c4c;
+    color: white;
+    padding: 32px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.subtitle {
+    font-size: 18px;
+}
+
+#main-header a {
+    color: white;
+}
+
+nav a {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+/* Style each resume section */
+.resume-section {
+    padding: 22px 30px;
+    border-bottom: 1px solid #e1e8e5;
+}
+
+h2 {
+    margin-top: 0;
+    color: #245c4c;
+    font-size: 23px;
+    border-left: 4px solid #245c4c;
+    padding-left: 10px;
+}
+
+/* Keep wide tables usable on small screens */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #cbd8d2;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e9f2ee;
+}
+
+/* Style project entries */
+.project-card {
+    background-color: #f5f8f6;
+    border-left: 4px solid #245c4c;
+    padding: 16px;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+footer {
+    padding: 16px;
+    text-align: center;
+    background-color: #cbd8d2;
+}
+
+/* Adjust the page for narrow screens */
+@media (max-width: 600px) {
+    body {
+        padding: 8px;
+    }
+
+    #main-header {
+        padding: 24px 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .resume-section {
+        padding: 18px 16px;
+    }
+}
